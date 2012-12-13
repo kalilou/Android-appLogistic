@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logistic"
+    android:weightSum="1">
+    
+ 
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="9dp"
+    android:id="@+id/LineaireCon1"
+    android:visibility="visible"
+    >
+    
+    <EditText 
+    android:id="@+id/login"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" 
+    android:hint="@string/login"   
+    />
+    
+     <EditText 
+    android:id="@+id/password"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:hint="@string/password"
+    
+    />
+</LinearLayout> 
+
+
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LineaireCon2"
+    android:visibility="visible"
+    >
+    <Button 
+    android:layout_gravity="center" 
+    android:text="@string/textCon" 
+    android:layout_height="wrap_content" 
+    android:textStyle="bold" 
+    android:layout_width="200dp" 
+    android:id="@+id/ButtonCon"></Button> 
+</LinearLayout>
+
+<LinearLayout  
+	android:layout_width="fill_parent" 
+	android:orientation="vertical" 
+	android:gravity="center_horizontal" 
+	android:layout_height="fill_parent">
+	
+	
+    <LinearLayout 
+    android:layout_width="fill_parent" 
+    android:orientation="horizontal" 
+    android:layout_height="wrap_content" 
+    android:gravity="center_horizontal">
+    
+        <TextView 
+        android:textStyle="bold" 
+        android:layout_gravity="center" 
+        android:layout_height="wrap_content"
+        android:text="@string/NouveauManager"
+        android:textColor="#F88F0D"
+        android:layout_width="wrap_content"
+        android:id="@+id/newManager" 
+        android:textSize="17dp"></TextView>
+        
+        <CheckBox 
+        android:id="@+id/checkbox" 
+        android:layout_height="wrap_content" 
+        android:onClick="onClickChangeBox1"
+        android:checked="false"
+        android:layout_width="wrap_content"></CheckBox>
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+    android:layout_width="fill_parent" 
+    android:orientation="vertical" 
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:id="@+id/addMannger"
+    android:visibility="invisible"
+    >
+    
+    <EditText 
+    android:id="@+id/nomManager"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textColor="#F88F0D"
+   	android:inputType="text"
+   	android:hint="@string/nomManager"
+    
+    />
+     <EditText 
+    android:id="@+id/prenomManager"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:hint="@string/prenomManager"
+    
+    
+    />
+     <EditText 
+    android:id="@+id/loginManager"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:hint="@string/login"
+    
+    />
+    <EditText 
+    android:id="@+id/passwordManager"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:password="true"
+    android:hint="@string/password"
+    
+    />
+     <EditText 
+    android:id="@+id/rePasswordManager"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:password="true"
+    android:hint="@string/password"
+    />
+    
+    <Button 
+    android:id="@+id/ButtonDem"
+    android:layout_gravity="center" 
+    android:layout_height="wrap_content" 
+    android:layout_width="200dp"
+    android:text="@string/demarrerButton" 
+    android:textStyle="bold">
+    </Button>
+
+</LinearLayout>
+
+<LinearLayout 
+ android:layout_width="fill_parent" 
+    android:orientation="vertical" 
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:id="@+id/addLangue"
+
+>
+
+
+ <TextView 
+     	android:id="@+id/langue" 
+        android:textStyle="bold" 
+        android:layout_gravity="center" 
+        android:layout_height="wrap_content"
+        android:textColor="#F88F0D"
+        android:layout_width="wrap_content"      
+        android:text="@string/choisirLangue"
+        android:textSize="17dp">
+     
+ </TextView>
+ <RadioGroup
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:gravity="center_horizontal"
+   android:orientation="vertical">
+   
+   <RadioButton
+    android:id="@+id/option1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/langue1"
+    android:textColor="#F88F0D"
+    android:textStyle="bold" 
+    android:checked="true"
+     />
+    
+   <RadioButton
+    android:id="@+id/option2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/langue2"
+    android:textColor="#F88F0D"
+    android:textStyle="bold" 
+     />  
+   </RadioGroup>
+   
+</LinearLayout>
+
+</LinearLayout>
+    
+</LinearLayout>
+
+
+    

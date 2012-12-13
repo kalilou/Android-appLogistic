@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="horizontal"
+  android:background="#99999999">
+
+  <ImageView
+  	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:src="@drawable/icon"
+	  android:contentDescription="@string/ImgDesc"
+	  />
+  <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical">
+	  <TextView
+		  android:id="@+id/clientNom"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:textSize="25dp"
+		  android:textStyle="bold"/>
+	  <TextView
+		  android:id="@+id/clientPrenom"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:textColor="#FF00FF00"
+		  android:textSize="16dp"
+		  android:textStyle="normal"
+		  android:maxLength="50"/>
+	   <TextView
+		  android:id="@+id/clientAdresse"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:textSize="16dp"
+		  android:textStyle="italic"/>
+	   
+	   <TextView
+		  android:id="@+id/clientTel"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:textSize="25dp"
+		  android:textStyle="bold"/>
+	   
+	   <TextView
+		  android:id="@+id/clientEmail"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:textSize="25dp"
+		  android:textStyle="bold"/>
+	   
+	    <TextView
+		  android:id="@+id/clientEnterprise"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:textSize="25dp"
+		  android:textStyle="bold"/>
+  </LinearLayout>
+  
+</LinearLayout>

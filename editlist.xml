@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    
+    
+    
+    <Button
+				android:layout_width="fill_parent"
+				android:textColor="#FF00FF00"
+				android:layout_height="wrap_content"
+				android:text="@string/EditClient"
+				android:id="@+id/EditCientBt"/>
+	<Button
+				android:layout_width="fill_parent"
+				android:textColor="#FF00FF00"
+				android:layout_height="wrap_content"
+				android:text="@string/EditCamion"
+				android:id="@+id/EditCamionBt"/>
+	
+	<Button
+				android:layout_width="fill_parent"
+				android:textColor="#FF00FF00"
+				android:layout_height="wrap_content"
+				android:text="@string/EditChauffeur"
+				android:id="@+id/EditChauffeurBt"/>
+
+	<LinearLayout
+	    android:id="@+id/editerAll"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+		android:paddingTop="100dp"
+		
+	>
+
+	<LinearLayout
+	    android:id="@+id/formulaireChauffeur"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:visibility="invisible"
+	    android:orientation="vertical" >
+	
+ <EditText 
+    android:id="@+id/nomChauffeur"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+   	android:inputType="text"
+   	android:hint="@string/nomChauffeur"
+    
+    />
+     <EditText 
+    android:id="@+id/prenomChauffeur"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:hint="@string/prenomChauffeur"
+    />
+   
+    <EditText 
+    android:id="@+id/emailChauffeur"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+    android:inputType="textEmailAddress"
+    android:hint="@string/emailChauffeur"/>
+    
+    <EditText 
+    android:id="@+id/telChauffeur"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+    android:inputType="phone"
+    android:hint="@string/telChauffeur"
+
+    />
+   <EditText 
+    android:id="@+id/adresseChauffeur"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:hint="@string/adresseChauffeur"
+    />
+    <Button 
+    android:id="@+id/ButtonDemChauffeur"
+    android:layout_height="wrap_content" 
+    android:layout_width="200dp"
+    android:text="@string/demarrerButtonAddChauffeur" 
+    android:textStyle="bold">
+    </Button>
+	</LinearLayout>	
+    
+<LinearLayout
+    android:id="@+id/formulaireClient"
+    android:layout_width="206dp"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    android:orientation="vertical" >
+	
+ <EditText 
+    android:id="@+id/nomClient"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+   	android:inputType="text"
+   	android:hint="@string/nomClient"
+    
+    />
+     <EditText 
+    android:id="@+id/prenomClient"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:hint="@string/prenomClient"
+    />
+   
+     
+     <EditText 
+    android:id="@+id/emailClient"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:hint="@string/emailClient"
+    />
+    <EditText 
+    android:id="@+id/telClient"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:hint="@string/telClient"
+
+    />
+   
+   
+    <EditText 
+    android:id="@+id/adresseCient"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="#F88F0D"
+    android:inputType="text"
+    android:hint="@string/adresseClient"
+    />
+    <Button 
+    android:id="@+id/ButtonDemClient"
+    android:layout_height="wrap_content" 
+    android:layout_width="200dp"
+    android:text="@string/demarrerButtonAdd" 
+    android:textStyle="bold">
+    </Button>
+	</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/formulaireCamion"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/marqueCamion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/marqueCamion"
+        android:inputType="text"
+        android:textColor="#F88F0D" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/typeCamion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/typeCamion"
+        android:inputType="text"
+        android:textColor="#F88F0D" />
+
+    <EditText
+        android:id="@+id/colorCamion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/colorCamion"
+        android:inputType="text"
+        android:textColor="#F88F0D" />
+
+    <EditText
+        android:id="@+id/categoryCamion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/categoryCamion"
+        android:inputType="text"
+        android:textColor="#F88F0D" />
+    
+    <EditText
+        android:id="@+id/plaqueCamion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/plaqueCamion"
+        android:inputType="text"
+        android:textColor="#F88F0D" />
+    
+
+    <Button
+        android:id="@+id/ButtonDemCamion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/demarrerButtonAddCamion"
+        android:textStyle="bold" />
+</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

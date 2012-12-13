@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/five"
+    android:gravity="center"
+    >
+    
+    
+    <EditText 
+    android:id="@+id/nomManager"
+    android:layout_height="wrap_content"
+    android:hint="@string/nomManager"
+    android:layout_width="184dp"/>
+    
+    <EditText 
+    android:id="@+id/prenomManager"
+    android:layout_height="wrap_content"
+    android:hint="@string/prenomManager"
+     android:layout_width="184dp"
+     />
+    
+     <EditText 
+    android:id="@+id/adresseManager"
+    android:layout_height="wrap_content"
+    android:hint="@string/adresseManager"
+    android:layout_width="184dp"
+    
+    />
+    
+     <EditText 
+    android:id="@+id/telephoneManager"
+    android:layout_height="wrap_content"
+    android:hint="@string/telManager"
+    android:layout_width="184dp"
+    
+    />
+    
+    <EditText 
+    android:id="@+id/emailManager"
+    android:layout_height="wrap_content"
+    android:hint="@string/emailManager"
+    android:layout_width="184dp"
+    
+    />
+    
+    <Button 
+    android:id="@+id/validerManager"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/ValiderButton"
+    android:textStyle="bold"
+    android:textSize="15dp"
+    android:layout_width="184dp"
+    
+    />
+    
+    <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    >
+   
+   
+   <ImageView 
+    android:id="@+id/img1Manager"
+    android:src="@drawable/add"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:contentDescription="@string/ImgDesc"
+   />
+    <ImageView
+    android:id="@+id/imgManager"
+    android:src="@drawable/addmanager"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:contentDescription="@string/ImgDesc"
+   />
+   
+   </LinearLayout>
+    
+</LinearLayout>
+    
